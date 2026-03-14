@@ -1,0 +1,146 @@
+/* General Reset */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+  background-color: #0f172a;
+  color: rgb(255, 254, 254);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+
+/* Hero Section */
+.hero img {
+    position: static; /* Removes absolute positioning */
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 30px; /* Pushes the image up away from the title */
+}
+
+/* Hero Section Styling */
+.hero {
+    padding: 30px 450px;
+    background: #ffffff;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:fantasy sans-serif;
+}
+
+
+/* Skills Section */
+.skills-container h2 {
+    margin-bottom: 30px; /* Pushes the grid boxes down away from the title */
+}
+
+/* skill Styling */
+.skills-container {
+    padding: 30px 450px;
+    background: #09318f;
+}
+.skill-box {
+  background-color: #02bbbb;
+  padding: 30px;
+  width: 220px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 5 4px 10px rgba(226, 7, 7, 0.1);
+}
+
+.skill-box h3 {
+  margin-bottom: 15px;
+}
+
+.skill-box p {
+  font-size: 14px;
+  color: #180588;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+fieldset {
+  width: 400px;
+  padding: 30px;
+  border: 2px solid #0f172a;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #14b8a6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0f766e;
+}
+
+/* Target your main section containers */
+section, 
+.skills-section, 
+.contact-section {
+    margin-top: 60px;    /* Space above the section */
+    margin-bottom: 60px; /* Space below the section */
+}
+
+/* Optional: If you want a specific gap between them using a single class */
+.main-content-wrapper > div {
+    margin-bottom: 80px; 
+}
