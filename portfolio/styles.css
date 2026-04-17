@@ -1,7 +1,10 @@
-/* General Reset */
+* {
+    box-sizing: border-box;
+  font-family:fantasy sans-serif;
+}
+
 body {
     font-family: 'Segoe UI', sans-serif;
-    margin: 0;
     text-align: center;
 }
 
@@ -50,14 +53,6 @@ nav ul {
     max-width: 1000px;
     margin: 0 auto;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family:fantasy sans-serif;
-}
-
 
 /* Skills Section */
 .skills-container h2 {
@@ -143,4 +138,23 @@ section,
 /* Optional: If you want a specific gap between them using a single class */
 .main-content-wrapper > div {
     margin-bottom: 80px; 
+}
+
+/* Default = mobile first */
+.container {
+  padding: 10px;
+}
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  .container {
+    padding: 40px;
+  }
 }
